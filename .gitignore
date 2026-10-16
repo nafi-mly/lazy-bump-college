@@ -1,4 +1,43 @@
-.venvcreditcard.csv
-.venv/
+# ─── Python ────────────────────────────────
 __pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# ─── Jupyter ───────────────────────────────
 .ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ─── Datasets (large CSVs, never commit) ──
+*.csv
+!sample_submission.csv
+!requirements.csv
+*.zip
+*.tar.gz
+*.7z
+*.parquet
+*.feather
+
+# ─── PDFs (assignment briefs, keep only submissions) ─
+# Uncomment if you want to nuke all PDFs from tracking.
+# *.pdf
+
+# ─── OS / Editor ───────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ─── ML artifacts ──────────────────────────
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+
+# ─── Keep assignment PDFs & notebooks ──────
+!**/5054251005_*.pdf
